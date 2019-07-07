@@ -11,8 +11,12 @@ public class RunnableExample implements Runnable {
         System.out.println("Creating Thread...");
         Thread thread = new Thread(runnable);
 
+        System.out.println(thread.getState());
+
         System.out.println("Starting Thread...");
         thread.start();
+
+        System.out.println(thread.getState());
     }
 
     @Override
